@@ -20,7 +20,8 @@ body {
   font-family: 'Greycliff CF', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 1.2;
+  color: $text-black;
 }
 
 img {
@@ -50,9 +51,14 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include min(1200) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }

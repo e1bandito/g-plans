@@ -1,0 +1,136 @@
+.header {
+
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include min($sm) {
+    flex-direction: row;
+  }
+}
+
+.header__top-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+
+  @include min($lg) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+
+    @include min($sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--left {
+    @include min($sm) {
+      margin-right: 40px;
+    }
+
+    @include min($lg) {
+      margin-right: 57px;
+    }
+  }
+}
+
+.header__top-wrapper-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__accent-text {
+  color: $secondary;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.header__stock {
+  color: $secondary;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 3px 5px;
+  background-color: $yellow;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.header__timer {
+  margin-left: 14px;
+  padding: 3px 21px 4px;
+  border: 1px solid $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 900;
+  color: $secondary;
+
+  @include min($lg) {
+    margin-right: 17px;
+  }
+}
+
+.header__timer-dots {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.header__timer-minutes {
+  position: relative;
+
+  &::after {
+    content: "m";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    padding: 2px;
+    background-color: $white;
+    color: $text-black;
+    font-size: 8px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+.header__timer-seconds {
+  position: relative;
+
+  &::after {
+    content: "s";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    padding: 2px;
+    background-color: $white;
+    color: $text-black;
+    font-size: 8px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+.header__note-text {
+  font-size: 8px;
+  color: $black;
+  margin-top: 10px;
+
+  @include min($lg) {
+    margin-top: 0;
+  }
+}

@@ -9,14 +9,31 @@
   <link rel="preload" crossorigin="anonymous" as="font" href="fonts/GreycliffCFRegular.woff2">
   <link rel="preload" crossorigin="anonymous" as="font" href="fonts/GreycliffCFBold.woff2">
   <link rel="preload" crossorigin="anonymous" as="font" href="fonts/GreycliffCFHeavy.woff2">
-  <link rel="stylesheet" href="./css/index.css">
+  <style>html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{-webkit-box-sizing:border-box;box-sizing:border-box;scroll-behavior:smooth}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}body{font-family:'Greycliff CF',Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.2;color:#160047}.container{max-width:1440px;width:100%;margin:0 auto;padding-left:15px;padding-right:15px}@media (min-width:1200px){.container{padding-left:120px;padding-right:120px}}.header__top{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-top:10px;padding-bottom:10px}@media (min-width:576px){.header__top{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}}.header__top-wrapper{text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}@media (min-width:992px){.header__top-wrapper{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}}.header__top-wrapper:not(:last-child){margin-bottom:15px}@media (min-width:576px){.header__top-wrapper:not(:last-child){margin-bottom:0}}@media (min-width:576px){.header__top-wrapper--left{margin-right:40px}}@media (min-width:992px){.header__top-wrapper--left{margin-right:57px}}.header__top-wrapper-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.header__accent-text{color:#169d00;font-size:16px;font-weight:700;line-height:1.8}.header__stock{color:#169d00;font-size:16px;font-weight:700;padding:3px 5px;background-color:#fff600;margin-right:5px;margin-left:10px}.header__timer{margin-left:14px;padding:3px 21px 4px;border:1px solid #169d00;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:18px;font-weight:900;color:#169d00}@media (min-width:992px){.header__timer{margin-right:17px}}.header__timer-dots{margin-left:3px;margin-right:3px}.header__timer-minutes{position:relative}.header__timer-minutes::after{content:"m";position:absolute;bottom:-10px;left:0;right:0;padding:2px;background-color:#fff;color:#160047;font-size:8px;line-height:1;text-transform:uppercase}.header__timer-seconds{position:relative}.header__timer-seconds::after{content:"s";position:absolute;bottom:-10px;left:0;right:0;padding:2px;background-color:#fff;color:#160047;font-size:8px;line-height:1;text-transform:uppercase}.header__note-text{font-size:8px;color:#000;margin-top:10px}@media (min-width:992px){.header__note-text{margin-top:0}}</style>
+  <link rel="stylesheet" href="./css/index.css" media="print" onload="this.media='all'">
 </head>
 
 <body>
   <div class="main">
-    <!--include ../../blocks/header/header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-wrapper header__top-wrapper--left"><span class="header__accent-text">NEW CUSTOMER discount applied!*</span>
+            <div class="header__top-wrapper-inner"><span class="header__stock">50% OFF</span>
+              <spsn class="header__plain-text">your custom plan.</spsn>
+            </div>
+          </div>
+          <div class="header__top-wrapper header__top-wrapper--right">
+            <div class="header__top-wrapper-inner"><span class="header__accent-text">Offer ends in</span>
+              <div class="header__timer"><span class="header__timer-minutes">58</span><span class="header__timer-dots">:</span><span class="header__timer-seconds">43</span></div>
+            </div><span class="header__note-text">*Available for new customers. <br> 50% discounted for life.</span>
+          </div>
+        </div>
+      </div>
+    </header>
   </div>
   <script src="./js/index.min.js"></script>
+<noscript><link rel="stylesheet" href="./css/index.css"></noscript>
 </body>
 
 </html>
