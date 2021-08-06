@@ -134,3 +134,26 @@
     margin-top: 0;
   }
 }
+
+.header__hero {
+  padding-top: 18px;
+  padding-bottom: 400px;
+  background-image: url("../img/hero-bg..png"),
+                    linear-gradient(to bottom, #fff6e5, #ffefd2);
+  background-position: right bottom -200px, center center;
+  background-size: 710px 718px, 100%;
+  background-repeat: no-repeat;
+}
+
+.header__hero-top {
+  display: flex;
+  align-items: center;
+}
+
+.header__main-nav {
+  margin-left: auto;
+}
+
+.header__burger {
+  margin-left: auto;
+}

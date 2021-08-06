@@ -1,0 +1,16 @@
+- var mainNavData = getData('main-nav');
+
++b.NAV.main-nav.--open.header__main-nav
+  +e.UL.list
+    each item in mainNavData
+      +e.LI(class=(item.dropdown ? 'item--dropdown' : 'item'))
+        +e.A.link(href=item.url) #{item.title}
+        if item.dropdown
+          +e.UL.dropdown-list
+            each dropdownItem in item.dropdown
+              +e.LI.dropdown-item
+                +e.A.dropdown-link(href=dropdownItem.url) #{dropdownItem.title}
+  +e.A.login-btn(href="#") Login
+  +e.BUTTON.close(aria-label="close menu", type="button")
+    +e.SPAN.close-line(aria-label="true")
+    +e.SPAN.close-line(aria-label="true")
