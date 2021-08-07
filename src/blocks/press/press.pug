@@ -1,0 +1,19 @@
+- var pressData = getData('press');
+
++b.SECTION.press
+  +e.container.container
+    +e.UL.list
+      each card in pressData
+        +e.LI.item
+          +e.img
+            +picture(card.pic)
+          +e.P.item-text !{card.text}
+    +e.P.reviews-text Our customers say
+      +e.SPAN.accent  Excellent
+      +e.SPAN.reviews-img
+        +picture({img: "stars", alt: "five stars rating", type: "png", width: 137, height: 26})
+      +e.SPAN.accent  4.8
+      |  out of 5 based on
+      +e.SPAN.accent  9,452 reviews
+      +e.SPAN.reviews-img
+        +picture({img: "trustpilot", alt: "trustpilot", type: "png", width: 93, height: 22})
