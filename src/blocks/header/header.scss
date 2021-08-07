@@ -137,12 +137,40 @@
 
 .header__hero {
   padding-top: 18px;
-  padding-bottom: 400px;
-  background-image: url("../img/hero-bg..png"),
-                    linear-gradient(to bottom, #fff6e5, #ffefd2);
-  background-position: right bottom -200px, center center;
-  background-size: 710px 718px, 100%;
+  background-image: linear-gradient(to bottom, #fff6e5, #ffefd2);
+  background-position: center center;
+  background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.header__hero-container {
+  padding-bottom: 340px;
+  background-image: url("../img/hero-bg.png");
+  background-position: center bottom -30px;
+  background-size: 320px auto;
+  background-repeat: no-repeat;
+
+  @include min($md) {
+    padding-bottom: 40px;
+    background-position: right bottom -30px;
+    background-size: 400px auto;
+  }
+
+  @include min($lg) {
+    background-size: 550px auto;
+    background-position: right -30px bottom -50px;
+  }
+
+  @include min($xl) {
+    padding-bottom: 100px;
+    background-size: 650px auto;
+    background-position: right -30px bottom -50px;
+  }
+
+  @include min(1440) {
+    background-size: 810px auto;
+    background-position: right 20px bottom -200px;
+  }
 }
 
 .header__hero-top {
@@ -156,4 +184,144 @@
 
 .header__burger {
   margin-left: auto;
+}
+
+.header__hero-content {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  @include min($md) {
+    margin-left: 0;
+  }
+
+  @include min(860) {
+    margin-left: 50px;
+  }
+
+  @include min($lg) {
+    max-width: 455px;
+  }
+
+  @include min($xl) {
+    padding-top: 85px;
+    max-width: 490px;
+  }
+}
+
+.header__hero-title {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 900;
+  color: $text-black;
+
+  @include min($lg) {
+    font-size: 50px;
+    margin-bottom: 36px;
+  }
+
+  @include min($xl) {
+    font-size: 60px;
+  }
+}
+
+.header__hero-text {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  color: $black;
+  text-align: center;
+
+  @include min($lg) {
+    font-size: 24px;
+    margin-bottom: 44px;
+  }
+}
+
+.header__hero-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 40px 20px;
+  background-color: $accent;
+  color: $white;
+  border-radius: 48px;
+  transition: background-color 0.3s linear;
+  margin-bottom: 20px;
+
+  @include min($lg) {
+    max-width: 452px;
+    width: 100%;
+    padding: 21px 55px 20px;
+    margin-bottom: 46px;
+  }
+
+  & svg {
+    transition: transform 0.3s linear;
+  }
+
+  &:hover {
+    background-color: $accent-hover;
+
+    & svg {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.header__hero-link-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+
+  @include min($sm) {
+    font-size: 26px;
+  }
+}
+
+.header__hero-link-note {
+  font-weight: 400;
+  margin-top: 6px;
+  font-size: 14px;
+
+  @include min($sm) {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+}
+
+.header__hero-list {
+  @include lsr;
+
+  @include min($sm) {
+    padding-left: 20px;
+  }
+}
+
+.header__hero-list-item {
+  position: relative;
+  padding-left: 24px;
+  color: $accent;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 14px;
+    transform: translateY(-50%);
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+  }
 }

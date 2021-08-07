@@ -15,10 +15,20 @@
             +e.SPAN.timer-seconds 43
         +e.SPAN.note-text *Available for new customers. <br> 50% discounted for life.
   +e.hero
-    .container
+    +e.hero-container.container
       +e.hero-top
         include ../../../src/blocks/logo/logo
         include ../../../src/blocks/burger/burger
         include ../../../src/blocks/main-nav/main-nav
+      +e.hero-content
+        +e.H1.hero-title The custom meal plan guaranteed* to get results
+        +e.P.hero-text Created by doctors to allow you to eat what you want to get the body you want.
+        +e.A.hero-link(href="#")
+          +e.SPAN.hero-link-text Create your plan now
+            +e.SPAN.hero-link-note (it takes just 60 seconds)
+          +icon('arrow-right')(width="23", height="23")
+        +e.UL.hero-list
+          +e.LI.hero-list-item 100% customized to your goals and body
+          +e.LI.hero-list-item Reach your body goal in record time
 
 

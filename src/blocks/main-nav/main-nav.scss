@@ -9,6 +9,7 @@
   overflow-y: auto;
   min-height: 1px;
   padding-bottom: 40px;
+  z-index: 5;
 
   &--open {
     transform: translateX(-100%);
