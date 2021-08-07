@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="preload" crossorigin="anonymous" as="font" href="fonts/GreycliffCFRegular.woff2">
+  <link rel="preload" crossorigin="anonymous" as="font" href="fonts/GreycliffCFBold.woff2">
+  <link rel="preload" crossorigin="anonymous" as="font" href="fonts/GreycliffCFHeavy.woff2">
+  <style>html{line-height:1.15;-webkit-text-size-adjust:100%;-webkit-box-sizing:border-box;box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:'Greycliff CF',Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.2;color:#160047}h1{font-size:2em;margin:.67em 0}a{background-color:transparent;text-decoration:none}img{border-style:none;max-width:100%;height:auto}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button{overflow:visible}button{text-transform:none}[type=button],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}.container{max-width:1440px;width:100%;margin:0 auto;padding-left:15px;padding-right:15px}.header__top,.header__top-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.header__top{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-top:10px;padding-bottom:10px}.header__top-wrapper{text-align:center}.header__top-wrapper:not(:last-child){margin-bottom:15px}.header__top-wrapper-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.header__accent-text,.header__stock{color:#169d00;font-size:16px;font-weight:700}.header__accent-text{line-height:1.8}.header__stock{padding:3px 5px;background-color:#fff600;margin-right:5px;margin-left:10px}.header__timer{margin-left:14px;padding:3px 21px 4px;border:1px solid #169d00;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:18px;font-weight:900;color:#169d00}.header__timer-dots{margin-left:3px;margin-right:3px}.header__timer-minutes,.header__timer-seconds{position:relative}.header__timer-minutes::after,.header__timer-seconds::after{content:"m";position:absolute;bottom:-10px;left:0;right:0;padding:2px;background-color:#fff;color:#160047;font-size:8px;line-height:1;text-transform:uppercase}.header__timer-seconds::after{content:"s"}.header__note-text{font-size:8px;color:#000;margin-top:10px}.header__hero{padding-top:18px;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff6e5),to(#ffefd2));background-image:linear-gradient(to bottom,#fff6e5,#ffefd2);background-position:center center;background-size:100%;background-repeat:no-repeat}.header__hero-container{padding-bottom:340px;background-image:url(img/hero-bg.png);background-position:center bottom -30px;background-size:320px auto;background-repeat:no-repeat}.header__hero-top{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__burger,.header__main-nav{margin-left:auto}.header__hero-content{width:100%;max-width:400px;margin:0 auto;padding-top:30px}.header__hero-title{margin:0 0 30px;text-align:center;font-size:32px;line-height:1;font-weight:900;color:#160047}.header__hero-text{font-size:20px;margin:0 0 20px;color:#000;text-align:center}.header__hero-link{display:-webkit-box;display:-ms-flexbox;display:flex}.header__hero-link{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:21px 40px 20px;background-color:#4e00ff;color:#fff;border-radius:48px;margin-bottom:20px}.burger{position:relative;width:50px;height:50px;padding:15px 10px;background-color:transparent;border:0;display:block}.burger__line{position:absolute;top:0;bottom:0;margin:auto;display:block;width:calc(100% - 20px);height:4px;background-color:#4e00ff}.burger__line:nth-child(1){-webkit-transform:translateY(-8px);transform:translateY(-8px)}.burger__line:nth-child(2){opacity:1}.burger__line:nth-child(3){-webkit-transform:translateY(8px);transform:translateY(8px)}.main-nav{position:fixed;top:0;right:-100%;width:100%;height:100vh;background-color:#f7f4ff;overflow-y:auto;min-height:1px;padding-bottom:40px;z-index:5}.main-nav__list{margin:0;list-style:none;padding:50px 20px 20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-nav__link{display:block;padding:15px;font-size:18px;color:#160047}.main-nav__item--dropdown{position:relative}.main-nav__item--dropdown::before{content:"";position:absolute;top:23px;left:0;width:6px;height:6px;background-image:url(img/dropdown.svg);background-repeat:no-repeat;background-position:center center;background-size:100%}.main-nav__dropdown-list{padding:0;margin:0;list-style:none;display:none}.main-nav__dropdown-link{display:block;padding:10px;color:#4e00ff}.main-nav__close{position:absolute;right:10px;top:10px;width:50px;height:50px;padding:15px 10px;background-color:transparent;border:0}.main-nav__close-line{position:absolute;top:0;bottom:0;margin:auto;display:block;width:calc(100% - 20px);height:4px;background-color:#4e00ff}.main-nav__close-line:nth-child(1){-webkit-transform:rotate(45deg);transform:rotate(45deg)}.main-nav__close-line:nth-child(2){-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.main-nav__login-btn{background-color:#4e00ff;width:140px;height:34px;border-radius:20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-size:13px;line-height:1;font-weight:400;letter-spacing:2.55px;color:#fff;text-transform:uppercase;margin:0 auto}@media (min-width:576px){.header__top{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.header__top-wrapper:not(:last-child){margin-bottom:0}.header__top-wrapper--left{margin-right:40px}}@media (min-width:768px){.header__hero-container{padding-bottom:40px;background-position:right bottom -30px;background-size:400px auto}.header__hero-content{margin-left:0}}@media (min-width:860px){.header__hero-content{margin-left:50px}}@media (min-width:992px){.header__top-wrapper{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__top-wrapper--left{margin-right:57px}.header__timer{margin-right:17px}.header__note-text{margin-top:0}.header__hero-container{background-size:550px auto;background-position:right -30px bottom -50px}.header__hero-content{max-width:455px}.header__hero-title{font-size:50px;margin-bottom:36px}.header__hero-text{font-size:24px;margin-bottom:44px}.header__hero-link{max-width:452px;width:100%;padding:21px 55px 20px;margin-bottom:46px}.burger{display:none}.main-nav{position:static;top:auto;right:auto;height:auto;width:auto;background-color:transparent;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-bottom:0;overflow:visible}.main-nav__list{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:0}.main-nav__link{padding-left:23px;padding-right:23px}.main-nav__dropdown-item{width:100%}.main-nav__dropdown-link{width:100%;text-align:center;color:#160047}.main-nav__close{display:none}.main-nav__login-btn{margin-right:8px;margin-left:4px}}@media (min-width:1200px){.container{padding-left:120px;padding-right:120px}.header__hero-container{padding-bottom:100px;background-size:650px auto;background-position:right -30px bottom -50px}.header__hero-content{padding-top:85px;max-width:490px}.header__hero-title{font-size:60px}}</style>
+  <link rel="stylesheet" href="./css/index.css" media="print" onload="this.media='all'">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__top-wrapper header__top-wrapper--left"><span class="header__accent-text">NEW CUSTOMER discount applied!*</span>
+          <div class="header__top-wrapper-inner"><span class="header__stock">50% OFF</span>
+            <spsn class="header__plain-text">your custom plan.</spsn>
+          </div>
+        </div>
+        <div class="header__top-wrapper header__top-wrapper--right">
+          <div class="header__top-wrapper-inner"><span class="header__accent-text">Offer ends in</span>
+            <div class="header__timer"><span class="header__timer-minutes">58</span><span class="header__timer-dots">:</span><span class="header__timer-seconds">43</span></div>
+          </div><span class="header__note-text">*Available for new customers. <br> 50% discounted for life.</span>
+        </div>
+      </div>
+    </div>
+    <div class="header__hero">
+      <div class="header__hero-container container">
+        <div class="header__hero-top"><a class="logo" href="#"><img class="logo__img" src="img/logo.svg" width="110" heigth="33" alt="g plans" title="" /></a><button class="burger header__burger" type="button" aria-label="burger menu"><span class="burger__line" aria-hidden="true"></span><span class="burger__line" aria-hidden="true"></span><span class="burger__line" aria-hidden="true"></span></button>
+          <nav class="main-nav header__main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--dropdown"><a class="main-nav__link" href="#">Programs</a>
+                <ul class="main-nav__dropdown-list">
+                  <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Program 1</a></li>
+                  <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Program 2</a></li>
+                  <li class="main-nav__dropdown-item"><a class="main-nav__dropdown-link" href="#">Program 3</a></li>
+                </ul>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Supplements</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Blog</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Help Center</a></li>
+            </ul><a class="main-nav__login-btn" href="#">Login</a><button class="main-nav__close" aria-label="close menu" type="button"><span class="main-nav__close-line" aria-label="true"></span><span class="main-nav__close-line" aria-label="true"></span></button>
+          </nav>
+        </div>
+        <div class="header__hero-content">
+          <h1 class="header__hero-title">The custom meal plan guaranteed* to get results</h1>
+          <p class="header__hero-text">Created by doctors to allow you to eat what you want to get the body you want.</p><a class="header__hero-link" href="#"><span class="header__hero-link-text">Create your plan now<span class="header__hero-link-note">(it takes just 60 seconds)</span></span><svg width="23" height="23"><use xlink:href="img/sprite.svg#icon_arrow-right"></use></svg></a>
+          <ul class="header__hero-list">
+            <li class="header__hero-list-item">100% customized to your goals and body</li>
+            <li class="header__hero-list-item">Reach your body goal in record time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <section class="press">
+      <div class="press__container container">
+        <ul class="press__list">
+          <li class="press__item">
+            <div class="press__img">
+              <picture>
+                <source type="image/webp" srcset="img/press-today@2x.webp 2x,  img/press-today.webp 1x" />
+                <source srcset="img/press-today@2x.png 2x,  img/press-today.png 1x" /><img src="img/press-today.png" alt="today" width="106" height="17" loading="lazy" />
+              </picture>
+            </div>
+            <p class="press__item-text">“G-Plans is like the Tesla of diet and <br> nutrition. They changed the game.”</p>
+          </li>
+          <li class="press__item">
+            <div class="press__img">
+              <picture>
+                <source type="image/webp" srcset="img/press-shape@2x.webp 2x,  img/press-shape.webp 1x" />
+                <source srcset="img/press-shape@2x.png 2x,  img/press-shape.png 1x" /><img src="img/press-shape.png" alt="shape" width="71" height="19" loading="lazy" />
+              </picture>
+            </div>
+            <p class="press__item-text">“Yur dream body is no longer <br> out of reach with G-Plans”</p>
+          </li>
+          <li class="press__item">
+            <div class="press__img">
+              <picture>
+                <source type="image/webp" srcset="img/press-yahoo@2x.webp 2x,  img/press-yahoo.webp 1x" />
+                <source srcset="img/press-yahoo@2x.png 2x,  img/press-yahoo.png 1x" /><img src="img/press-yahoo.png" alt="yahoo" width="77" height="21" loading="lazy" />
+              </picture>
+            </div>
+            <p class="press__item-text">“By far the easiest and most <br> informative way to lose weight”</p>
+          </li>
+          <li class="press__item">
+            <div class="press__img">
+              <picture>
+                <source type="image/webp" srcset="img/press-gq@2x.webp 2x,  img/press-gq.webp 1x" />
+                <source srcset="img/press-gq@2x.png 2x,  img/press-gq.png 1x" /><img src="img/press-gq.png" alt="gq" width="50" height="27" loading="lazy" />
+              </picture>
+            </div>
+            <p class="press__item-text">“Works 99% better than <br> any other diet we’ve tried”</p>
+          </li>
+          <li class="press__item">
+            <div class="press__img">
+              <picture>
+                <source type="image/webp" srcset="img/press-people@2x.webp 2x,  img/press-people.webp 1x" />
+                <source srcset="img/press-people@2x.png 2x,  img/press-people.png 1x" /><img src="img/press-people.png" alt="people" width="55" height="22" loading="lazy" />
+              </picture>
+            </div>
+            <p class="press__item-text">“Helps you understand exactly <br> what to eat to reach your goals”</p>
+          </li>
+        </ul>
+        <p class="press__reviews-text">Our customers say<span class="press__accent"> Excellent</span><span class="press__reviews-img">
+            <picture>
+              <source type="image/webp" srcset="img/stars@2x.webp 2x,  img/stars.webp 1x" />
+              <source srcset="img/stars@2x.png 2x,  img/stars.png 1x" /><img src="img/stars.png" alt="five stars rating" width="137" height="26" loading="lazy" />
+            </picture>
+          </span><span class="press__accent"> 4.8</span> out of 5 based on<span class="press__accent"> 9,452 reviews</span><span class="press__reviews-img">
+            <picture>
+              <source type="image/webp" srcset="img/trustpilot@2x.webp 2x,  img/trustpilot.webp 1x" />
+              <source srcset="img/trustpilot@2x.png 2x,  img/trustpilot.png 1x" /><img src="img/trustpilot.png" alt="trustpilot" width="93" height="22" loading="lazy" />
+            </picture>
+          </span></p>
+      </div>
+    </section>
+  </div>
+  <script src="./js/index.min.js"></script>
+<noscript><link rel="stylesheet" href="./css/index.css"></noscript>
+</body>
+
+</html>
